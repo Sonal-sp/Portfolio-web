@@ -11,9 +11,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.11-black?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
 [![Three.js](https://img.shields.io/badge/Three.js-0.169-black?style=for-the-badge&logo=three.js)](https://threejs.org/)
-[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-web-gamma-flame.vercel.app)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-web-chi-sage.vercel.app/)
 
-[🌐 **Live Digital Observatory**](https://portfolio-web-gamma-flame.vercel.app) • [📄 **GitHub Repository**](https://github.com/Sonal-sp/Portfolio-web)
+[🌐 **Live Digital Observatory**](https://portfolio-web-chi-sage.vercel.app/) • [📄 **GitHub Repository**](https://github.com/Sonal-sp/Portfolio-web)
 
 </div>
 
@@ -125,6 +125,12 @@ Inspired by ***Interstellar***, **Apple**, **Linear**, **Vercel**, **Framer**, *
    npm run build
    npm run start
    ```
+
+---
+
+## 🌐 Live Observatory
+
+- **Live URL**: [https://portfolio-web-chi-sage.vercel.app/](https://portfolio-web-chi-sage.vercel.app/)
 
 ---
 
