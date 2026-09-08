@@ -59,7 +59,13 @@ export const PORTFOLIO_DATA = {
   personal: {
     name: "SONAL PARMAR",
     tagline: "FINITE LIFE. INFINITE CURIOSITY.",
-    roles: ["Computer Engineering Student", "GDG National Top 45 Finalist", "Full-Stack & Embedded IoT Builder"],
+    roles: [
+      "B.Tech CSE (Data Science) at D. J. Sanghvi (DJSCE)",
+      "MH CET State Rank 1566 (Top 2% of 70,000+)",
+      "Creatives Co-Comm Member at S4DS (Society for Data Science)",
+      "GDG National Top 45 Finalist",
+      "Full-Stack & Systems Builder"
+    ],
     location: "Mumbai, India",
     email: "sonal.parmar@somaiya.edu",
     phone: "+91 8766686204",
@@ -68,17 +74,27 @@ export const PORTFOLIO_DATA = {
     medium: "https://medium.com/@airryaxolotl2607",
     notion: "#",
     resumeUrl: "#",
-    version: "v5.2.0-OBSERVATORY",
+    version: "v5.3.0-OBSERVATORY",
     stats: {
-      projectsBuilt: 7,
-      nationalRank: "Top 45 Pixelverse",
+      projectsBuilt: 8,
+      nationalRank: "MH CET Rank 1566",
       ideasWaiting: 15,
       booksReadThisYear: 12,
-      status: "Still Learning.",
+      status: "DJSCE CSE (Data Science)",
     }
   },
 
   competitions: [
+    {
+      id: "mh-cet-2026",
+      title: "MH CET Engineering Entrance",
+      event: "Maharashtra State CET Cell",
+      organizer: "Government of Maharashtra CET Cell",
+      date: "2026",
+      achievement: "State Rank 1566 / 70,000+ Candidates",
+      description: "Secured All Maharashtra Rank 1566 out of over 70,000 candidates in the State CET examination, earning admission to B.Tech Computer Science & Engineering (Data Science) at D. J. Sanghvi College of Engineering.",
+      badge: "State Level"
+    },
     {
       id: "pixelverse-2026",
       title: "PIXELVERSE (National Tech Event)",
@@ -150,7 +166,7 @@ export const PORTFOLIO_DATA = {
         story: "Graduated with 89.60% from Lok Nagari Public School. Serving as Sports Captain taught me leadership, discipline, and team coordination, while my natural curiosity pushed me to understand how software systems function behind the screen."
       },
       {
-        year: "2023 - Present • K. J. Somaiya Polytechnic",
+        year: "2023 - 2026 • K. J. Somaiya Polytechnic",
         title: "Diploma in Computer Science & Engineering (94.00%)",
         story: "Immersed deeply into core Computer Science—building a 94.00% academic record. Mastered C, C++, Java, Python, Operating Systems, Linux Administration, DBMS, and Data Structures. Volunteered at the IQ-WAVE State-Level Technical Quiz in Oct 2023."
       },
@@ -160,9 +176,14 @@ export const PORTFOLIO_DATA = {
         story: "Gained real-world IT operations exposure under the Industrial Training Institute (ITI) at K J Somaiya College of Science and Commerce. Learned how enterprise IT infrastructure, campus network services, and academic systems function under high daily demand."
       },
       {
-        year: "2025 - 2026 • SafeStep Capstone & Pixelverse Top 45",
-        title: "Final Year Capstone Wearable + 6 Software Missions",
-        story: "Architected SafeStep—a smart elderly fall detection wearable band (ESP32 C3, MPU6050, n8n WhatsApp automation) and companion Flutter mobile app. Selected among the Top 45 National Participants at GDG Pixelverse."
+        year: "2026 • Higher Engineering Milestone",
+        title: "MH CET Rank 1566 & Admission to D. J. Sanghvi (DJSCE)",
+        story: "Ranked 1566 among 70,000+ candidates across Maharashtra State in the MH CET examination. Admitted to Dwarkadas J. Sanghvi College of Engineering (DJSCE) for B.Tech in Computer Science & Engineering (Data Science). Joined the Society for Data Science (S4DS) as Creatives Co-Committee Member."
+      },
+      {
+        year: "2026 • Systems & Capstone Releases",
+        title: "mini_redis in Rust, SafeStep Wearable & Pixelverse Top 45",
+        story: "Architected mini_redis (async key-value database in Rust using Tokio and RESP2) and SafeStep (smart elderly fall detection wearable with ESP32 C3 & Flutter app). Selected among Top 45 National Participants at GDG Pixelverse."
       }
     ]
   },
@@ -244,13 +265,14 @@ export const PORTFOLIO_DATA = {
     {
       id: "languages",
       name: "Programming Languages",
-      description: "The foundational syntax of logic and execution.",
+      description: "The foundational syntax of logic, execution, and memory safety.",
       skills: [
-        { name: "Python", whereUsed: "Cine-AI, Streamlit NLP scripts, CyberGuard Flask backend, Coursera Pandas/NumPy, Cisco Data Science", experienceNotes: "TextBlob sentiment analysis, Flask microservices, Pandas & NumPy data processing pipelines.", whatLearned: "Python enables rapid scientific prototyping and NLP data pipelines.", relatedMissions: ["Cine-AI", "CyberGuard-Pro"] },
+        { name: "Rust", whereUsed: "mini_redis async key-value cache engine", experienceNotes: "Tokio async runtime, ownership & borrowing semantics, RESP2 protocol parser, AOF persistence engine, egui desktop GUI.", whatLearned: "Memory safety without garbage collection enables predictable zero-cost abstractions.", relatedMissions: ["mini-redis"] },
+        { name: "Python", whereUsed: "Nova Voice Assistant, Cine-AI, CyberGuard Flask backend, Coursera Pandas/NumPy, Cisco Data Science", experienceNotes: "Speech synthesis, NLP sentiment analysis, Flask microservices, Pandas & NumPy data processing pipelines.", whatLearned: "Python enables rapid scientific prototyping, AI voice assistants, and data science pipelines.", relatedMissions: ["Cine-AI", "CyberGuard-Pro"] },
         { name: "Java", whereUsed: "Object-Oriented design, KJS Polytechnic coursework", experienceNotes: "Strong foundation in multi-threading, OOP patterns, and data structures.", whatLearned: "Strict object-oriented discipline builds robust maintainable software." },
         { name: "C Programming", whereUsed: "Low-level memory allocation, system logic", experienceNotes: "Pointer arithmetic, manual memory layout, structural algorithms.", whatLearned: "Understanding memory layout makes higher-level code far more efficient." },
         { name: "C++ / Embedded C", whereUsed: "ESP32 C3 SafeStep Capstone firmware, Arduino IDE, GeeksforGeeks TechXpression 2025", experienceNotes: "Embedded C++ for ESP32 microcontroller, MPU6050 sensor reading, threshold free-fall detection.", whatLearned: "Embedded hardware programming requires strict memory & timing control.", relatedMissions: ["safestep-capstone"] },
-        { name: "JavaScript", whereUsed: "Interactive Web apps, React, Three.js, MediaPipe AR, Pixelverse National Event", experienceNotes: "Async/Await, ES6+, WebRTC streaming, HTML5 Canvas API.", whatLearned: "JavaScript powers the modern browser as an application OS." },
+        { name: "JavaScript / TypeScript", whereUsed: "Interactive Web apps, Next.js 14, React, Three.js, MediaPipe AR, Pixelverse National Event", experienceNotes: "Async/Await, ES6+, WebRTC streaming, HTML5 Canvas API, Next.js App Router.", whatLearned: "TypeScript type safety eliminates runtime client state crashes." },
         { name: "Dart", whereUsed: "SafeStep Capstone Flutter Mobile App, Infosys Springboard Certification", experienceNotes: "Completed Infosys Springboard Dart Certification. Built SafeStep Flutter companion mobile app.", whatLearned: "Strongly typed client state management streamlines mobile UIs.", relatedMissions: ["safestep-capstone"] },
         { name: "SQL / MySQL", whereUsed: "Relational database queries, DBMS schemas", experienceNotes: "Normalized schemas, complex JOINs, relational constraints.", whatLearned: "A clean normalized schema prevents data corruption." },
         { name: "PHP", whereUsed: "Dynamic server-side web backends", experienceNotes: "Form handling, relational DB connectors, server-rendered views.", whatLearned: "Server-side rendering remains simple and pragmatic." }
@@ -272,8 +294,7 @@ export const PORTFOLIO_DATA = {
       name: "Frontend Engineering",
       description: "Crafting modern visual interfaces and fluid interactions.",
       skills: [
-        { name: "React", whereUsed: "My Cute Photobooth, Geo-Insights, SwiftShift", experienceNotes: "Functional design systems, custom hooks, state management, WebRTC.", whatLearned: "Declarative UI rendering simplifies complex interactive states.", relatedMissions: ["my-cute-photobooth", "Geo-Insights", "Swift-Shift"] },
-        { name: "Next.js", whereUsed: "Observatory Portfolio App Router", experienceNotes: "Server components, App Router, static page generation, Tailwind integration.", whatLearned: "Hybrid rendering bridges server performance with client interactivity." },
+        { name: "React & Next.js 14", whereUsed: "Observatory Portfolio, My Cute Photobooth, Geo-Insights, SwiftShift", experienceNotes: "Next.js App Router, functional design systems, custom hooks, state management, WebRTC.", whatLearned: "Declarative UI rendering simplifies complex interactive states.", relatedMissions: ["my-cute-photobooth", "Geo-Insights", "Swift-Shift"] },
         { name: "HTML5 & CSS3", whereUsed: "All web projects, Pixel Perfection TECH-Nirman 2K25", experienceNotes: "Semantic HTML, WAI-ARIA, flexbox, CSS grid, keyframes.", whatLearned: "Semantic structure is the foundation of web accessibility." },
         { name: "Tailwind CSS", whereUsed: "SwiftShift, Geo-Insights, Portfolio", experienceNotes: "Custom theme configuration, responsive breakpoints, sleek dark modes.", whatLearned: "Utility CSS speeds up UI iteration while maintaining design token consistency." },
         { name: "Framer Motion", whereUsed: "SwiftShift, Observatory Portfolio", experienceNotes: "Spring physics, layout animations, exit animations, gestures.", whatLearned: "Physics-based micro-interactions elevate tool user experience." },
@@ -282,9 +303,10 @@ export const PORTFOLIO_DATA = {
     },
     {
       id: "backend",
-      name: "Backend & APIs",
-      description: "Building robust server architectures and microservices.",
+      name: "Backend & Systems",
+      description: "Building robust server architectures, Rust caches, and microservices.",
       skills: [
+        { name: "Rust Tokio Async Runtime", whereUsed: "mini_redis multi-threaded TCP server", experienceNotes: "Asynchronous TCP networking, Tokio tasks, mutex-protected HashMaps, RESP2 protocol parsing.", whatLearned: "Async I/O with Tokio provides maximum throughput for concurrent network servers.", relatedMissions: ["mini-redis"] },
         { name: "Node.js & Express", whereUsed: "Asynchronous API services, REST endpoints", experienceNotes: "Non-blocking event loop, middleware pipelines, routing.", whatLearned: "Non-blocking I/O scales gracefully under high concurrent loads." },
         { name: "FastAPI & Flask", whereUsed: "CyberGuard Pro, Cine-AI Python services", experienceNotes: "Python web services, Pydantic type validation, Vercel deployments.", whatLearned: "Lightweight Python backends enable instant AI deployment." },
         { name: "REST APIs & Webhooks", whereUsed: "SafeStep n8n webhooks, TMDB API in Cine-AI, GitHub API", experienceNotes: "RESTful HTTP status codes, JSON serialization, webhook listeners.", whatLearned: "Webhooks provide instantaneous event-driven server alerts." }
@@ -293,8 +315,9 @@ export const PORTFOLIO_DATA = {
     {
       id: "ai-data-science",
       name: "Artificial Intelligence & Data Science",
-      description: "Cognitive models, NLP, Pandas/NumPy, ChatGPT API, and AR hand tracking.",
+      description: "Cognitive models, S4DS Data Science society, NLP, Pandas/NumPy, and AR gesture tracking.",
       skills: [
+        { name: "Society for Data Science (S4DS)", whereUsed: "D. J. Sanghvi (DJSCE) S4DS Creatives Co-Committee Member", experienceNotes: "Designing technical media, data science visual assets, workshop promo materials, and data science event branding.", whatLearned: "Visual communication makes complex data science concepts approachable." },
         { name: "NLP Sentiment Analysis", whereUsed: "Cine-AI audience review analyzer", experienceNotes: "TextBlob sentiment polarity scores, text preprocessing, review classification.", whatLearned: "NLP transforms unstructured review text into numerical sentiment scores.", relatedMissions: ["Cine-AI"] },
         { name: "Pandas & NumPy Data Analysis", whereUsed: "Coursera Python Data Analysis Certification, Cine-AI", experienceNotes: "Completed Coursera Pandas & NumPy Certification. Exploratory data analysis & dataframe manipulation.", whatLearned: "Numerical matrices and dataframes form the bedrock of data science." },
         { name: "ChatGPT API Chatbot Integration", whereUsed: "Coursera Customer Service Chatbot Certification", experienceNotes: "Completed Coursera ChatGPT Python Chatbot Certification. OpenAI API hooks, prompt engineering.", whatLearned: "LLM API integration enables natural conversational state flow." },
@@ -306,8 +329,9 @@ export const PORTFOLIO_DATA = {
     {
       id: "databases",
       name: "Databases & Data Modeling",
-      description: "Relational, document, and spreadsheet data design.",
+      description: "In-memory caches, AOF persistence, relational, document, and spreadsheet design.",
       skills: [
+        { name: "In-Memory Cache & AOF Persistence", whereUsed: "mini_redis database engine", experienceNotes: "Designing append-only file (AOF) log persistence and in-memory key-value dictionary storage in Rust.", whatLearned: "Combining in-memory speed with AOF write logs prevents data loss during server restarts.", relatedMissions: ["mini-redis"] },
         { name: "MongoDB", whereUsed: "Unstructured document storage, user profiles", experienceNotes: "Aggregation pipelines, schema validation, index tuning.", whatLearned: "Document flexibility demands careful schema design discipline." },
         { name: "MySQL / Relational DBMS", whereUsed: "Normalized schemas, KJS Polytechnic DBMS labs", experienceNotes: "Normalized tables, foreign key constraints, index design.", whatLearned: "ACID compliance ensures absolute data safety." },
         { name: "Firestore & SQLite", whereUsed: "SafeStep Flutter App, embedded local DB", experienceNotes: "Firestore document collections, security rules, offline caching.", whatLearned: "Lightweight local DBs enable robust offline user apps." },
@@ -339,9 +363,9 @@ export const PORTFOLIO_DATA = {
     {
       id: "design",
       name: "Design & UI/UX Engineering",
-      description: "Crafting intuitive visual layouts and pixel-perfect design systems.",
+      description: "Crafting intuitive visual layouts, S4DS media assets, and pixel-perfect UI.",
       skills: [
-        { name: "Figma", whereUsed: "UI wireframing, Pixel Perfection competition", experienceNotes: "Auto-layout, component variants, interactive prototyping.", whatLearned: "Design iterations in Figma are 10x faster than in code." },
+        { name: "Figma & Creative Design", whereUsed: "S4DS Creatives Co-Comm, UI wireframing, Pixel Perfection competition", experienceNotes: "Auto-layout, component variants, S4DS promotional visual assets, interactive prototyping.", whatLearned: "Design iterations in Figma are 10x faster than in code." },
         { name: "UI & UX Design", whereUsed: "Pixel Perfection TECH-Nirman 2K25, SafeStep Flutter UI", experienceNotes: "Typography hierarchies, contrast checks, user flow mapping.", whatLearned: "Remove unnecessary decisions to create effortless user flow." },
         { name: "Wireframing & Prototyping", whereUsed: "Low-fi structural block ideation to interactive click-throughs", experienceNotes: "Paper sketches, low-fi digital blocks, interactive prototype transitions.", whatLearned: "Structure first, aesthetic polish second." }
       ]
@@ -351,7 +375,7 @@ export const PORTFOLIO_DATA = {
       name: "Developer Tools",
       description: "Instruments used to build, test, and profile software.",
       skills: [
-        { name: "VS Code & Arduino IDE", whereUsed: "Primary IDEs for web, Flutter & ESP32 firmware", experienceNotes: "Arduino IDE 2.3 for ESP32 C3 coding, serial monitor debugging.", whatLearned: "Mastering development IDEs speeds up hardware & software iteration." },
+        { name: "VS Code & Cargo / Rust CLI", whereUsed: "Primary IDEs for web, Rust, Flutter & ESP32 firmware", experienceNotes: "Cargo package manager, rustc compiler, VS Code Rust-analyzer.", whatLearned: "Mastering compiler feedback speeds up memory-safe system coding." },
         { name: "Android Studio", whereUsed: "SafeStep Flutter mobile app & native Android profiling", experienceNotes: "Emulator configuration, APK profiling, ADB commands.", whatLearned: "Profiling tools spot performance bottlenecks before launch." },
         { name: "Postman", whereUsed: "API endpoint testing & documentation", experienceNotes: "Environment variables, pre-request scripts, automated collections.", whatLearned: "Testing endpoints in isolation saves hours of frontend debugging." },
         { name: "Tableau & QGIS", whereUsed: "Data visualization & geospatial mapping", experienceNotes: "Chart creation, metric filtering, Geo-Insights spatial data.", whatLearned: "Visual mapping turns raw numbers into intuitive stories." },
@@ -375,6 +399,56 @@ export const PORTFOLIO_DATA = {
   ],
 
   missions: [
+    {
+      id: "mini-redis",
+      title: "mini_redis: Async In-Memory Key-Value DB in Rust",
+      tagline: "High-performance asynchronous key-value store with RESP2 protocol, AOF persistence & desktop GUI",
+      category: "Mobile & Systems",
+      status: "Deployed & Operational",
+      featured: true,
+      year: "2026",
+      summary: "A high-performance, asynchronous in-memory key-value database and cache built with Rust, Tokio, and RESP2 (Redis Serialization Protocol). Features a multi-threaded async TCP server with Append-Only File (AOF) log persistence, an interactive CLI REPL, and a desktop GUI built with egui (eframe).",
+      problem: "Traditional caching solutions can be memory-unsafe or lack transparent persistence and multi-interface debugging tools.",
+      whoItHelps: "Systems engineers, Rust developers, and database performance researchers.",
+      architecture: {
+        overview: "Multi-threaded async TCP server built on Tokio runtime, parsing RESP2 binary streams, executing memory-safe HashMap operations, and flushing mutation logs to an Append-Only File (AOF).",
+        flowchart: [
+          "TCP Client / REPL / GUI -> Sends RESP2 commands over TCP socket",
+          "Tokio Async Engine -> Spawns lightweight tasks per incoming connection",
+          "RESP2 Frame Parser -> Decodes raw byte buffers into Redis command vectors (SET, GET, DEL, EXPIRE)",
+          "In-Memory Store -> Mutates thread-safe Mutex-wrapped HashMap",
+          "AOF Persistence -> Appends state-changing commands to disk log for recovery"
+        ],
+        databaseDesign: "In-memory hash table with time-to-live (TTL) expiration sweep + AOF disk log replay.",
+        apiDesign: "Standard Redis RESP2 TCP wire protocol compatible with Redis CLI tools."
+      },
+      features: [
+        "Asynchronous multi-threaded TCP server powered by Rust & Tokio",
+        "Full RESP2 Protocol parsing (Simple Strings, Errors, Integers, Bulk Strings, Arrays)",
+        "Append-Only File (AOF) disk persistence for crash recovery",
+        "Interactive Terminal REPL CLI for low-latency testing",
+        "Modern desktop GUI management client built with egui (eframe)"
+      ],
+      challenges: [
+        {
+          problem: "Managing concurrent thread-safe access to the shared key-value dictionary without causing lock contention.",
+          solution: "Utilized fine-grained Mutex sharding across key hash ranges to allow parallel concurrent reads and writes."
+        }
+      ],
+      metrics: [
+        "Memory-safe execution with zero data race vulnerabilities thanks to Rust borrow checker",
+        "Sub-millisecond query latency across thousands of concurrent Tokio async tasks"
+      ],
+      lessonsLearned: [
+        "Rust's strict compile-time ownership guarantees eliminate entire classes of concurrent data races in high-throughput network servers."
+      ],
+      futureImprovements: [
+        "Add cluster replication and memory eviction policies (LRU/LFU)"
+      ],
+      techStack: ["Rust", "Tokio", "RESP2 Protocol", "egui (eframe)", "CLI REPL", "AOF Persistence"],
+      githubUrl: "https://github.com/Sonal-sp/mini_redis",
+      liveUrl: "https://github.com/Sonal-sp/mini_redis"
+    },
     {
       id: "safestep-capstone",
       title: "SafeStep: Smart Elderly Fall Detection & Alert System",
@@ -770,10 +844,10 @@ export const PORTFOLIO_DATA = {
   ],
 
   currentlyExploring: {
-    learning: "Flutter Riverpod state management & ESP32 embedded C++ optimization",
+    learning: "Data Science, Machine Learning & Rust Tokio async concurrency",
     reading: "'Operating System Concepts' by Silberschatz, Galvin & Gagne",
-    building: "SafeStep Smart Elderly Fall Detection & Alert System (Capstone)",
-    researching: "6-DOF sensor fusion algorithms & n8n automated WhatsApp SOS gateways",
+    building: "mini_redis async key-value cache in Rust & DJSCE S4DS Data Science projects",
+    researching: "RESP2 protocol parsing, AOF persistence & high-throughput async network servers",
     wondering: "How will human curiosity adapt when AI can generate instant software prototypes in seconds?"
   },
 
@@ -815,6 +889,16 @@ export const PORTFOLIO_DATA = {
   },
 
   lifeTimeline: [
+    {
+      id: "t-djsce",
+      period: "Present",
+      year: "2026",
+      title: "B.Tech CSE (Data Science) at D. J. Sanghvi (DJSCE)",
+      subtitle: "MH CET State Rank 1566 / 70,000+ Candidates",
+      description: "Secured All Maharashtra Rank 1566 out of 70,000+ candidates in Maharashtra State CET. Admitted to Dwarkadas J. Sanghvi College of Engineering (DJSCE) in Computer Science & Engineering (Data Science). Appointed Creatives Co-Committee Member at Society for Data Science (S4DS).",
+      highlights: ["MH CET Rank 1566 / 70,000+", "D. J. Sanghvi (DJSCE)", "CSE (Data Science)", "S4DS Creatives Co-Comm"],
+      type: "Education"
+    },
     {
       id: "t-capstone",
       period: "Present",
@@ -861,7 +945,7 @@ export const PORTFOLIO_DATA = {
       year: "2023 - 2026",
       title: "Diploma in Computer Engineering",
       subtitle: "K. J. Somaiya Polytechnic (94.00%)",
-      description: "Third-year Computer Engineering student maintaining a 94.00% academic record across C, C++, Java, Python, Operating Systems, Linux, DBMS, and Data Structures.",
+      description: "Graduated with 94.00% aggregate score across C, C++, Java, Python, Operating Systems, Linux, DBMS, and Data Structures.",
       highlights: ["94.00% Aggregate Score", "Strong CS Theory Foundation", "7 Industry Certifications"],
       type: "Education"
     },
@@ -891,8 +975,8 @@ export const PORTFOLIO_DATA = {
       year: "2026 & Beyond",
       title: "Engineering Scalable Systems & Impact",
       subtitle: "Building software that empowers millions",
-      description: "Aspiring to pursue higher Computer Engineering studies, architect scalable distributed software systems, and build platforms that eliminate uncertainty for curious builders.",
-      highlights: ["Higher Computer Engineering Studies", "AI & Distributed Systems Architecture", "Empowering curious minds worldwide"],
+      description: "Aspiring to architect scalable distributed software systems, master advanced data science & machine learning pipelines, and build platforms that eliminate uncertainty for curious builders.",
+      highlights: ["B.Tech CSE (Data Science) Excellence", "AI & Distributed Systems Architecture", "Empowering curious minds worldwide"],
       type: "Aspiration"
     }
   ],
@@ -900,18 +984,20 @@ export const PORTFOLIO_DATA = {
   githubStats: {
     username: "Sonal-sp",
     pinnedRepos: [
+      { name: "mini_redis", desc: "High-performance async in-memory key-value DB in Rust with Tokio, RESP2 protocol, AOF persistence & egui GUI.", stars: 4, forks: 0, lang: "Rust", url: "https://github.com/Sonal-sp/mini_redis", liveUrl: "https://github.com/Sonal-sp/mini_redis" },
+      { name: "Nova-Voice-Assistant", desc: "AI Voice Assistant built with Python, speech recognition, intent execution & conversational AI synthesis.", stars: 2, forks: 0, lang: "Python", url: "https://github.com/Sonal-sp/Nova-An-AI-voice-assistant-", liveUrl: "https://github.com/Sonal-sp/Nova-An-AI-voice-assistant-" },
       { name: "SafeStep", desc: "Smart Elderly Fall Detection System with ESP32 C3 wearable, MPU6050, Flutter app & n8n WhatsApp SOS.", stars: 5, forks: 1, lang: "Dart/C++", url: "https://github.com/Sonal-sp/SafeStep", liveUrl: "https://github.com/Sonal-sp/SafeStep" },
       { name: "Cine-AI", desc: "Data science web app with TMDB API & TextBlob NLP audience review sentiment analysis.", stars: 2, forks: 0, lang: "Python", url: "https://github.com/Sonal-sp/Cine-AI", liveUrl: "https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/" },
-      { name: "pokemon-ar-sim", desc: "Augmented Reality Pokémon simulation with MediaPipe 3D hand tracking & Canvas particle physics.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/pokemon-ar-sim", liveUrl: "https://github.com/Sonal-sp/pokemon-ar-sim" },
       { name: "CyberGuard-Pro", desc: "AI-based password security analyzer built with Flask, entropy calculation & pattern detection.", stars: 1, forks: 0, lang: "HTML/Python", url: "https://github.com/Sonal-sp/CyberGuard-Pro", liveUrl: "https://cyber-guard-pro-gamma.vercel.app" },
       { name: "Geo-Insights", desc: "3D geospatial discovery tool built with React, Three.js & Tailwind CSS for geography aspirants.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/Geo-Insights", liveUrl: "https://geo-insights-beta.vercel.app" },
-      { name: "my-cute-photobooth", desc: "Browser-based digital Japanese purikara photobooth with WebRTC streaming & draggable stickers.", stars: 2, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/my-cute-photobooth", liveUrl: "https://my-cute-photobooth.vercel.app" }
+      { name: "my-cute-photobooth", desc: "Browser-based digital Japanese purikara photobooth with WebRTC streaming & draggable stickers.", stars: 2, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/my-cute-photobooth", liveUrl: "https://my-cute-photobooth.vercel.app" },
+      { name: "Swift-Shift", desc: "Conversion-optimized relocation single-page landing page built with React, Vite & Tailwind.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/Swift-Shift", liveUrl: "https://swift-shift-xi.vercel.app/" }
     ],
     stats: {
-      totalCommitsThisYear: 185,
-      repositories: 7,
-      contributionsLastYear: 220,
-      streakDays: 18,
+      totalCommitsThisYear: 240,
+      repositories: 9,
+      contributionsLastYear: 290,
+      streakDays: 24,
     }
   },
 
@@ -926,10 +1012,10 @@ export const PORTFOLIO_DATA = {
       { title: "Campus Quietude", caption: "Shadow play across college corridors.", location: "KJS Polytechnic, Mumbai", year: "2024" }
     ],
     curiosityLog: [
+      "How does Tokio manage thread sharding and cooperative task scheduling across CPU cores in Rust?",
+      "How do RESP2 serialization protocols encode bulk string frames over raw TCP streams?",
       "How do WebRTC protocols negotiate peer-to-peer video streaming across NAT firewalls?",
-      "How does MediaPipe predict 21 3D hand coordinates in real time from a single 2D camera feed?",
-      "What mathematical formula best balances entropy vs dictionary pattern matching in password security?",
-      "How can 3D WebGL globes optimize rendering millions of terrain polygons without dropping below 60 FPS?"
+      "How does MediaPipe predict 21 3D hand coordinates in real time from a single 2D camera feed?"
     ]
   }
 };
