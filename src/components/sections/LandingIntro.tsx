@@ -138,13 +138,18 @@ export const LandingIntro: React.FC = () => {
           {PORTFOLIO_DATA.personal.name}
         </h1>
 
-        {/* Roles */}
-        <div className="flex flex-wrap items-center justify-center gap-3 font-mono text-sm sm:text-lg text-starlight-300">
-          <span>Engineer.</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-          <span>Builder.</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-gold-500" />
-          <span>Lifelong Learner.</span>
+        {/* Revealed Roles */}
+        <div className="flex flex-wrap items-center justify-center gap-3 font-mono text-xs sm:text-base text-starlight-200">
+          {PORTFOLIO_DATA.personal.roles.map((role, idx) => (
+            <React.Fragment key={idx}>
+              <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-gold-400 font-semibold shadow-sm">
+                {role}
+              </span>
+              {idx < PORTFOLIO_DATA.personal.roles.length - 1 && (
+                <span className="w-1.5 h-1.5 rounded-full bg-gold-500/50 hidden sm:inline-block" />
+              )}
+            </React.Fragment>
+          ))}
         </div>
 
         {/* Philosophy Intro */}
