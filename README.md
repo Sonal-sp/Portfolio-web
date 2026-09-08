@@ -74,14 +74,14 @@ Inspired by ***Interstellar***, **Apple**, **Linear**, **Vercel**, **Framer**, *
 ### 8. 🚀 Missions & Case Studies (`MissionsSection.tsx`)
 - Interactive project showcase with rich modal viewers:
   - **mini_redis**: High-Performance Async In-Memory Key-Value DB in Rust (Tokio, RESP2, AOF Persistence, CLI & egui GUI).
+  - **Nova**: An AI Voice Assistant built with Python (SpeechRecognition, pyttsx3, desktop system controls & web automation).
+  - **My Cute Photobooth**: Japanese Purikara WebRTC Digital Photobooth with custom filters & draggable stickers.
+  - **Cine-AI**: Real-time movie NLP review sentiment data science app with live TMDB API integration.
+  - **Geo-Insights**: Interactive 3D WebGL Geospatial Discovery Tool for geography students & civil services aspirants.
   - **SafeStep Capstone**: Smart Elderly Fall Detection Wearable (ESP32 C3 + MPU6050 + Flutter + n8n WhatsApp SOS).
-  - **Nova Voice Assistant**: AI Voice Assistant built with Python.
-  - **Cine-AI**: Real-time movie NLP review sentiment data science app.
-  - **Pokemon AR Simulator**: MediaPipe 3D hand tracking gesture AR app.
-  - **CyberGuard Pro**: Flask AI password entropy security analyzer.
-  - **Geo-Insights**: 3D WebGL geospatial discovery tool.
-  - **My Cute Photobooth**: Japanese purikara WebRTC digital photobooth.
-  - **SwiftShift**: Conversion-optimized relocation landing app.
+  - **CyberGuard Pro**: Flask AI password entropy security analyzer with attack pattern detection.
+  - **Pokemon AR Simulator**: MediaPipe 3D hand tracking gesture AR simulation.
+  - **SwiftShift**: Conversion-optimized relocation landing app built with React, Vite & Tailwind.
 
 ### 9. 📓 The Thought Archive (`ThoughtArchiveSection.tsx`)
 - Scientific research notes & inquiry hypotheses (*"Can AI become a mentor instead of just a chatbot?"*, *"How can software reduce human uncertainty?"*).

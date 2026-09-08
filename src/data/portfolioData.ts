@@ -76,7 +76,7 @@ export const PORTFOLIO_DATA = {
     resumeUrl: "#",
     version: "v5.3.0-OBSERVATORY",
     stats: {
-      projectsBuilt: 8,
+      projectsBuilt: 9,
       nationalRank: "MH CET Rank 1566",
       ideasWaiting: 15,
       booksReadThisYear: 12,
@@ -450,6 +450,202 @@ export const PORTFOLIO_DATA = {
       liveUrl: "https://github.com/Sonal-sp/mini_redis"
     },
     {
+      id: "nova-voice-assistant",
+      title: "Nova: An AI Voice Assistant",
+      tagline: "Intelligent desktop voice assistant with speech recognition, intent execution & voice synthesis",
+      category: "AI & ML",
+      status: "Deployed & Operational",
+      featured: true,
+      year: "2026",
+      summary: "Nova is an intelligent AI voice assistant built in Python that translates voice input into automated desktop actions, web search navigation, knowledge retrieval, and real-time audio responses using advanced speech recognition pipelines.",
+      problem: "Traditional desktop workflows require continuous manual keyboard and mouse inputs, slowing down multitasking and hands-free computer control.",
+      whoItHelps: "Developers, students, and accessibility-focused users needing hands-free voice automation.",
+      architecture: {
+        overview: "Modular Python voice pipeline that captures microphone audio via PyAudio, executes acoustic speech-to-text modeling, parses command intent tokens, and synthesizes speech responses with pyttsx3.",
+        flowchart: [
+          "Microphone Input -> Captures live audio stream through PyAudio",
+          "Speech-to-Text Engine -> Converts speech waveforms into text using Google Speech Recognition",
+          "NLP Intent Classifier -> Evaluates command intent, parameters, and task triggers",
+          "System Execution Engine -> Triggers desktop apps, web searches, YouTube playback, or Wikipedia summaries",
+          "Audio Synthesis -> Renders human-like audio feedback via pyttsx3 speech driver"
+        ],
+        databaseDesign: "Local JSON configuration and user preference schema.",
+        apiDesign: "RESTful web APIs for weather telemetry, Wikipedia queries, and search services.",
+        aiPipeline: "Acoustic speech-to-text tokenization combined with natural language command parsing."
+      },
+      features: [
+        "Real-time voice query recognition and wake-word response",
+        "Automated web search, Wikipedia summary reading, and YouTube video playback",
+        "Desktop system controls (volume, application launching, time/date announcements)",
+        "Dynamic audio pitch, rate, and voice profile configuration",
+        "Resilient offline command fallback mode"
+      ],
+      challenges: [
+        {
+          problem: "Background environmental noise caused microphone audio recognition dropouts.",
+          solution: "Implemented dynamic ambient energy threshold calibration before listening to isolate background noise."
+        }
+      ],
+      metrics: [
+        "Sub-second command recognition and execution latency for local desktop tasks",
+        "Over 95% accuracy in standard indoor audio environments"
+      ],
+      lessonsLearned: [
+        "Voice user interfaces demand forgiving intent-matching heuristics and clear audio feedback cues."
+      ],
+      futureImprovements: [
+        "Integrate local LLM (Ollama / Llama 3) for conversational contextual memory"
+      ],
+      techStack: ["Python", "SpeechRecognition", "pyttsx3", "PyAudio", "NLP", "AI Assistant"],
+      githubUrl: "https://github.com/Sonal-sp/Nova-An-AI-voice-assistant-",
+      liveUrl: "https://github.com/Sonal-sp/Nova-An-AI-voice-assistant-"
+    },
+    {
+      id: "my-cute-photobooth",
+      title: "My Cute Photobooth: Japanese Purikara Digital Booth",
+      tagline: "Browser-based digital photobooth with WebRTC streaming & draggable stickers",
+      category: "Full-Stack Web",
+      status: "Deployed & Operational",
+      featured: true,
+      year: "2026",
+      summary: "A fully responsive browser-based digital photobooth built with React. Brings the magic of a Japanese purikara sticker booth straight to your laptop or phone—allowing users to snap 4-pic photostrips, decorate with draggable stickers, apply aesthetic filters, and save memories in a persistent digital scrapbook.",
+      problem: "Physical photobooths are expensive and inaccessible, while basic camera apps lack fun, creative Japanese purikara sticker customization.",
+      whoItHelps: "Casual web users, friends making photo memories, and sticker art lovers.",
+      architecture: {
+        overview: "React application leveraging browser WebRTC MediaDevices API for camera streaming, Canvas API for image filter rendering, and LocalStorage for scrapbook saving.",
+        flowchart: [
+          "WebRTC MediaStream -> Connects to user's webcam with live video feed",
+          "Photo Capture Engine -> Takes 4 sequential photos with countdown timers",
+          "Sticker Canvas -> Allows dragging, scaling, & rotating purikara stickers",
+          "Digital Scrapbook -> Saves exported PNG photostrips to LocalStorage"
+        ],
+        databaseDesign: "IndexedDB / LocalStorage for persistent local scrapbook saves.",
+        apiDesign: "WebRTC MediaDevices API & HTML Canvas 2D Context API."
+      },
+      features: [
+        "Real-time WebRTC webcam capture with countdown shutter",
+        "Classic Japanese Purikara 4-pic vertical photostrip layout",
+        "Draggable & resizable cute sticker overlays",
+        "Aesthetic filter presets (Vintage, Sepia, Soft Glow, Mono)",
+        "Persistent local digital scrapbook gallery"
+      ],
+      challenges: [
+        {
+          problem: "Exporting high-resolution photostrips with overlapping canvas stickers caused image blurriness.",
+          solution: "Rendered sticker vector coordinates to a high-DPI offscreen HTML Canvas before downloading."
+        }
+      ],
+      metrics: [
+        "Instant client-side photostrip generation with zero server lag",
+        "100% privacy—photos processed entirely in client browser"
+      ],
+      lessonsLearned: [
+        "Building delight into simple consumer web tools requires meticulous attention to UI micro-interactions."
+      ],
+      futureImprovements: [
+        "Add short GIF animation photostrip exporter"
+      ],
+      techStack: ["React", "JavaScript", "Canvas API", "WebRTC", "Tailwind CSS", "Vercel"],
+      githubUrl: "https://github.com/Sonal-sp/my-cute-photobooth",
+      liveUrl: "https://my-cute-photobooth.vercel.app"
+    },
+    {
+      id: "cine-ai",
+      title: "Cine-AI: Data Science & Review Sentiment Web App",
+      tagline: "Real-time movie recommendations with AI-powered NLP audience sentiment analysis",
+      category: "AI & ML",
+      status: "Deployed & Operational",
+      featured: true,
+      year: "2026",
+      summary: "An advanced, responsive data science web application providing real-time movie recommendations, live multimedia trailer integration, and automated AI NLP sentiment analysis on audience reviews, powered by TMDB REST API.",
+      problem: "Moviegoers spend excessive time scrolling through long reviews without understanding overall crowd sentiment polarity or finding accurate trailer previews.",
+      whoItHelps: "Film enthusiasts, data science learners, and moviegoers seeking instant review sentiment breakdown.",
+      architecture: {
+        overview: "Full-stack Streamlit Python application connecting live TMDB API endpoints to a TextBlob NLP sentiment pipeline.",
+        flowchart: [
+          "User Input -> Searches movie title in Streamlit UI",
+          "TMDB REST API -> Fetches movie metadata, posters & live trailer video keys",
+          "NLP Sentiment Engine -> Ingests user reviews & calculates TextBlob polarity scores",
+          "Analytical Dashboard -> Renders real-time sentiment distribution charts & trailer player"
+        ],
+        databaseDesign: "TMDB Live REST API integration with local session state caching for query results.",
+        apiDesign: "RESTful HTTP requests to TMDB API endpoints with bearer authentication.",
+        aiPipeline: "TextBlob NLP sentiment engine extracting polarity (-1.0 to +1.0) and subjectivity."
+      },
+      features: [
+        "Real-time movie search & metadata discovery",
+        "Automated AI-powered NLP review sentiment polarity analysis",
+        "Embedded live multimedia trailer streaming player",
+        "Interactive recommendation carousel based on genre vectors"
+      ],
+      challenges: [
+        {
+          problem: "Raw movie reviews contained HTML noise and special characters that skewed NLP polarity scores.",
+          solution: "Implemented regex text cleaning & normalization filters before passing text to TextBlob."
+        }
+      ],
+      metrics: [
+        "100% real-time sentiment analysis output on live review streams",
+        "Integrated across thousands of TMDB global movie titles"
+      ],
+      lessonsLearned: [
+        "NLP sentiment analysis turns qualitative text noise into actionable numerical metrics."
+      ],
+      futureImprovements: [
+        "Integrate transformer-based BERT models for deeper emotion classification"
+      ],
+      techStack: ["Python", "Streamlit", "TextBlob NLP", "TMDB API", "Data Science"],
+      githubUrl: "https://github.com/Sonal-sp/Cine-AI",
+      liveUrl: "https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/"
+    },
+    {
+      id: "geo-insights",
+      title: "Geo-Insights: 3D Geospatial Discovery Tool",
+      tagline: "Interactive 3D geospatial discovery tool for geography students & civil services aspirants",
+      category: "Full-Stack Web",
+      status: "Deployed & Operational",
+      featured: true,
+      year: "2026",
+      summary: "A minimalist, interactive 3D geospatial discovery tool designed for geography students and civil services aspirants to explore physical terrain features, spatial coordinates, and regional data visually.",
+      problem: "Geography and civil services aspirants struggle to visualize 3D spatial terrain and geographical features from static 2D textbook diagrams.",
+      whoItHelps: "Geography students, civil service (UPSC/MPSC) aspirants, and spatial researchers.",
+      architecture: {
+        overview: "React + Three.js interactive 3D globe visualization built with Vite and Tailwind CSS.",
+        flowchart: [
+          "Interactive 3D Globe -> Rendered using Three.js WebGL shaders",
+          "Spatial Pins -> Hovering location coordinates triggers regional data card",
+          "Terrain Layers -> Toggles physical, geopolitical, and climate overlays"
+        ],
+        databaseDesign: "Client-side GeoJSON dataset optimization.",
+        apiDesign: "RESTful geo-coordinate fetching."
+      },
+      features: [
+        "Interactive 3D WebGL globe navigation",
+        "Geographical feature pinpoints with educational summaries",
+        "Clean dark-mode aesthetic tailored for long study sessions",
+        "Vite & Tailwind CSS optimized performance"
+      ],
+      challenges: [
+        {
+          problem: "Large GeoJSON files caused initial globe rendering lag.",
+          solution: "Simplified 3D polygon meshes and implemented lazy loading for terrain layers."
+        }
+      ],
+      metrics: [
+        "60 FPS smooth 3D globe rotation and zoom",
+        "Deployed live on Vercel"
+      ],
+      lessonsLearned: [
+        "3D spatial graphics transform abstract textbook geography into memorable interactive mental maps."
+      ],
+      futureImprovements: [
+        "Add interactive quiz mode for geography aspirants"
+      ],
+      techStack: ["React", "Three.js", "Tailwind CSS", "Vite", "JavaScript", "Vercel"],
+      githubUrl: "https://github.com/Sonal-sp/Geo-Insights",
+      liveUrl: "https://geo-insights-beta.vercel.app"
+    },
+    {
       id: "safestep-capstone",
       title: "SafeStep: Smart Elderly Fall Detection & Alert System",
       tagline: "Final Year Capstone: ESP32 Wearable Wristband + Companion Flutter Mobile App with n8n Automation",
@@ -511,102 +707,6 @@ export const PORTFOLIO_DATA = {
       liveUrl: "https://github.com/Sonal-sp/SafeStep"
     },
     {
-      id: "cine-ai",
-      title: "Cine-AI: Data Science & Review Sentiment Web App",
-      tagline: "Real-time movie recommendations with AI-powered NLP audience sentiment analysis",
-      category: "AI & ML",
-      status: "Deployed & Operational",
-      featured: true,
-      year: "2026",
-      summary: "An advanced, responsive data science web application providing real-time movie recommendations, live multimedia trailer integration, and automated AI NLP sentiment analysis on audience reviews, powered by TMDB REST API.",
-      problem: "Moviegoers spend excessive time scrolling through long reviews without understanding overall crowd sentiment polarity or finding accurate trailer previews.",
-      whoItHelps: "Film enthusiasts, data science learners, and moviegoers seeking instant review sentiment breakdown.",
-      architecture: {
-        overview: "Full-stack Streamlit Python application connecting live TMDB API endpoints to a TextBlob NLP sentiment pipeline.",
-        flowchart: [
-          "User Input -> Searches movie title in Streamlit UI",
-          "TMDB REST API -> Fetches movie metadata, posters & live trailer video keys",
-          "NLP Sentiment Engine -> Ingests user reviews & calculates TextBlob polarity scores",
-          "Analytical Dashboard -> Renders real-time sentiment distribution charts & trailer player"
-        ],
-        databaseDesign: "TMDB Live REST API integration with local session state caching for query results.",
-        apiDesign: "RESTful HTTP requests to TMDB API endpoints with bearer authentication.",
-        aiPipeline: "TextBlob NLP sentiment engine extracting polarity (-1.0 to +1.0) and subjectivity."
-      },
-      features: [
-        "Real-time movie search & metadata discovery",
-        "Automated AI-powered NLP review sentiment polarity analysis",
-        "Embedded live multimedia trailer streaming player",
-        "Interactive recommendation carousel based on genre vectors"
-      ],
-      challenges: [
-        {
-          problem: "Raw movie reviews contained HTML noise and special characters that skewed NLP polarity scores.",
-          solution: "Implemented regex text cleaning & normalization filters before passing text to TextBlob."
-        }
-      ],
-      metrics: [
-        "100% real-time sentiment analysis output on live review streams",
-        "Integrated across thousands of TMDB global movie titles"
-      ],
-      lessonsLearned: [
-        "NLP sentiment analysis turns qualitative text noise into actionable numerical metrics."
-      ],
-      futureImprovements: [
-        "Integrate transformer-based BERT models for deeper emotion classification"
-      ],
-      techStack: ["Python", "Streamlit", "TextBlob NLP", "TMDB API", "Data Science"],
-      githubUrl: "https://github.com/Sonal-sp/Cine-AI",
-      liveUrl: "https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/"
-    },
-    {
-      id: "pokemon-ar-sim",
-      title: "Pokemon AR Simulator: Hand Gesture Recognition",
-      tagline: "Augmented Reality web app translating human hand gestures into elemental animations",
-      category: "Mobile & Systems",
-      status: "Deployed & Operational",
-      featured: true,
-      year: "2026",
-      summary: "A high-performance Augmented Reality (AR) web simulation using MediaPipe hand tracking and HTML5 Canvas particle physics. Features real-time gesture recognition (Pinch-to-Charge) and 8 distinct elemental types.",
-      problem: "Traditional web games rely on clunky keyboard/mouse inputs instead of natural spatial human gestures.",
-      whoItHelps: "Web AR enthusiasts, computer vision learners, and interactive game fans.",
-      architecture: {
-        overview: "Client-side WebRTC camera stream coupled with MediaPipe Hands neural network for 21-landmark 3D spatial tracking and Canvas particle physics.",
-        flowchart: [
-          "WebRTC Stream -> Captures live 60fps video feed",
-          "MediaPipe Hands -> Detects 21 3D hand landmarks in real time",
-          "Gesture Engine -> Evaluates Pinch-to-Charge spatial distances between thumb & index tips",
-          "Canvas Particle Physics -> Renders elemental particle bursts at palm coordinates"
-        ],
-        databaseDesign: "Pure client-side state machine with zero server roundtrips.",
-        apiDesign: "MediaPipe JS SDK browser hooks & WebRTC MediaStream API."
-      },
-      features: [
-        "Real-time 21-landmark 3D hand gesture tracking",
-        "Pinch-to-Charge energy aura spatial detection",
-        "8 distinct elemental particle physics rendering engines (Fire, Water, Electric, Leaf, Ice, Dragon, Shadow, Light)",
-        "60 FPS smooth HTML5 Canvas particle renderer"
-      ],
-      challenges: [
-        {
-          problem: "High particle counts caused frame drops on low-power mobile GPUs.",
-          solution: "Implemented dynamic particle pool recycling and frame budget limiting."
-        }
-      ],
-      metrics: [
-        "Sustained 60 FPS real-time gesture tracking in modern browsers",
-        "Zero hardware controllers required—100% vision driven"
-      ],
-      lessonsLearned: [
-        "Computer vision hand tracking opens intuitive human-computer interaction paradigms."
-      ],
-      futureImprovements: [
-        "Add multi-hand duel battle game modes"
-      ],
-      techStack: ["JavaScript", "MediaPipe Hands", "HTML5 Canvas", "WebRTC", "AR Physics"],
-      githubUrl: "https://github.com/Sonal-sp/pokemon-ar-sim"
-    },
-    {
       id: "cyberguard-pro",
       title: "CyberGuard Pro: AI Password Security Analyzer",
       tagline: "AI-based password strength analyzer with entropy calculation & attack pattern detection",
@@ -655,100 +755,52 @@ export const PORTFOLIO_DATA = {
       liveUrl: "https://cyber-guard-pro-gamma.vercel.app"
     },
     {
-      id: "geo-insights",
-      title: "Geo-Insights: 3D Geospatial Discovery Tool",
-      tagline: "Interactive 3D geospatial discovery tool for geography students & civil services aspirants",
-      category: "Full-Stack Web",
+      id: "pokemon-ar-sim",
+      title: "Pokemon AR Simulator: Hand Gesture Recognition",
+      tagline: "Augmented Reality web app translating human hand gestures into elemental animations",
+      category: "Mobile & Systems",
       status: "Deployed & Operational",
       featured: true,
       year: "2026",
-      summary: "A minimalist, interactive 3D geospatial discovery tool designed for geography students and civil services aspirants to explore physical terrain features, spatial coordinates, and regional data visually.",
-      problem: "Geography and civil services aspirants struggle to visualize 3D spatial terrain and geographical features from static 2D textbook diagrams.",
-      whoItHelps: "Geography students, civil service (UPSC/MPSC) aspirants, and spatial researchers.",
+      summary: "A high-performance Augmented Reality (AR) web simulation using MediaPipe hand tracking and HTML5 Canvas particle physics. Features real-time gesture recognition (Pinch-to-Charge) and 8 distinct elemental types.",
+      problem: "Traditional web games rely on clunky keyboard/mouse inputs instead of natural spatial human gestures.",
+      whoItHelps: "Web AR enthusiasts, computer vision learners, and interactive game fans.",
       architecture: {
-        overview: "React + Three.js interactive 3D globe visualization built with Vite and Tailwind CSS.",
+        overview: "Client-side WebRTC camera stream coupled with MediaPipe Hands neural network for 21-landmark 3D spatial tracking and Canvas particle physics.",
         flowchart: [
-          "Interactive 3D Globe -> Rendered using Three.js WebGL shaders",
-          "Spatial Pins -> Hovering location coordinates triggers regional data card",
-          "Terrain Layers -> Toggles physical, geopolitical, and climate overlays"
+          "WebRTC Stream -> Captures live 60fps video feed",
+          "MediaPipe Hands -> Detects 21 3D hand landmarks in real time",
+          "Gesture Engine -> Evaluates Pinch-to-Charge spatial distances between thumb & index tips",
+          "Canvas Particle Physics -> Renders elemental particle bursts at palm coordinates"
         ],
-        databaseDesign: "Client-side GeoJSON dataset optimization.",
-        apiDesign: "RESTful geo-coordinate fetching."
+        databaseDesign: "Pure client-side state machine with zero server roundtrips.",
+        apiDesign: "MediaPipe JS SDK browser hooks & WebRTC MediaStream API."
       },
       features: [
-        "Interactive 3D WebGL globe navigation",
-        "Geographical feature pinpoints with educational summaries",
-        "Clean dark-mode aesthetic tailored for long study sessions",
-        "Vite & Tailwind CSS optimized performance"
+        "Real-time 21-landmark 3D hand gesture tracking",
+        "Pinch-to-Charge energy aura spatial detection",
+        "8 distinct elemental particle physics rendering engines (Fire, Water, Electric, Leaf, Ice, Dragon, Shadow, Light)",
+        "60 FPS smooth HTML5 Canvas particle renderer"
       ],
       challenges: [
         {
-          problem: "Large GeoJSON files caused initial globe rendering lag.",
-          solution: "Simplified 3D polygon meshes and implemented lazy loading for terrain layers."
+          problem: "High particle counts caused frame drops on low-power mobile GPUs.",
+          solution: "Implemented dynamic particle pool recycling and frame budget limiting."
         }
       ],
       metrics: [
-        "60 FPS smooth 3D globe rotation and zoom",
-        "Deployed live on Vercel"
+        "Sustained 60 FPS real-time gesture tracking in modern browsers",
+        "Zero hardware controllers required—100% vision driven"
       ],
       lessonsLearned: [
-        "3D spatial graphics transform abstract textbook geography into memorable interactive mental maps."
+        "Computer vision hand tracking opens intuitive human-computer interaction paradigms."
       ],
       futureImprovements: [
-        "Add interactive quiz mode for geography aspirants"
+        "Add multi-hand duel battle game modes"
       ],
-      techStack: ["React", "Three.js", "Tailwind CSS", "Vite", "JavaScript", "Vercel"],
-      githubUrl: "https://github.com/Sonal-sp/Geo-Insights",
-      liveUrl: "https://geo-insights-beta.vercel.app"
-    },
-    {
-      id: "my-cute-photobooth",
-      title: "My Cute Photobooth: Japanese Purikara Digital Booth",
-      tagline: "Browser-based digital photobooth with WebRTC streaming & draggable stickers",
-      category: "Full-Stack Web",
-      status: "Deployed & Operational",
-      featured: true,
-      year: "2026",
-      summary: "A fully responsive browser-based digital photobooth built with React. Brings the magic of a Japanese purikara sticker booth straight to your laptop or phone—allowing users to snap 4-pic photostrips, decorate with draggable stickers, apply aesthetic filters, and save memories in a persistent digital scrapbook.",
-      problem: "Physical photobooths are expensive and inaccessible, while basic camera apps lack fun, creative Japanese purikara sticker customization.",
-      whoItHelps: "Casual web users, friends making photo memories, and sticker art lovers.",
-      architecture: {
-        overview: "React application leveraging browser WebRTC MediaDevices API for camera streaming, Canvas API for image filter rendering, and LocalStorage for scrapbook saving.",
-        flowchart: [
-          "WebRTC MediaStream -> Connects to user's webcam with live video feed",
-          "Photo Capture Engine -> Takes 4 sequential photos with countdown timers",
-          "Sticker Canvas -> Allows dragging, scaling, & rotating purikara stickers",
-          "Digital Scrapbook -> Saves exported PNG photostrips to LocalStorage"
-        ],
-        databaseDesign: "IndexedDB / LocalStorage for persistent local scrapbook saves.",
-        apiDesign: "WebRTC MediaDevices API & HTML Canvas 2D Context API."
-      },
-      features: [
-        "Real-time WebRTC webcam capture with countdown shutter",
-        "Classic Japanese Purikara 4-pic vertical photostrip layout",
-        "Draggable & resizable cute sticker overlays",
-        "Aesthetic filter presets (Vintage, Sepia, Soft Glow, Mono)",
-        "Persistent local digital scrapbook gallery"
-      ],
-      challenges: [
-        {
-          problem: "Exporting high-resolution photostrips with overlapping canvas stickers caused image blurriness.",
-          solution: "Rendered sticker vector coordinates to a high-DPI offscreen HTML Canvas before downloading."
-        }
-      ],
-      metrics: [
-        "Instant client-side photostrip generation with zero server lag",
-        "100% privacy—photos processed entirely in client browser"
-      ],
-      lessonsLearned: [
-        "Building delight into simple consumer web tools requires meticulous attention to UI micro-interactions."
-      ],
-      futureImprovements: [
-        "Add short GIF animation photostrip exporter"
-      ],
-      techStack: ["React", "JavaScript", "Canvas API", "WebRTC", "Tailwind CSS", "Vercel"],
-      githubUrl: "https://github.com/Sonal-sp/my-cute-photobooth",
-      liveUrl: "https://my-cute-photobooth.vercel.app"
+      techStack: ["JavaScript", "MediaPipe Hands", "HTML5 Canvas", "WebRTC", "AR Physics"],
+      githubUrl: "https://github.com/Sonal-sp/pokemon-ar-sim",
+      liveUrl: "https://github.com/Sonal-sp/pokemon-ar-sim"
     },
     {
       id: "swift-shift",
@@ -986,11 +1038,12 @@ export const PORTFOLIO_DATA = {
     pinnedRepos: [
       { name: "mini_redis", desc: "High-performance async in-memory key-value DB in Rust with Tokio, RESP2 protocol, AOF persistence & egui GUI.", stars: 4, forks: 0, lang: "Rust", url: "https://github.com/Sonal-sp/mini_redis", liveUrl: "https://github.com/Sonal-sp/mini_redis" },
       { name: "Nova-Voice-Assistant", desc: "AI Voice Assistant built with Python, speech recognition, intent execution & conversational AI synthesis.", stars: 2, forks: 0, lang: "Python", url: "https://github.com/Sonal-sp/Nova-An-AI-voice-assistant-", liveUrl: "https://github.com/Sonal-sp/Nova-An-AI-voice-assistant-" },
-      { name: "SafeStep", desc: "Smart Elderly Fall Detection System with ESP32 C3 wearable, MPU6050, Flutter app & n8n WhatsApp SOS.", stars: 5, forks: 1, lang: "Dart/C++", url: "https://github.com/Sonal-sp/SafeStep", liveUrl: "https://github.com/Sonal-sp/SafeStep" },
-      { name: "Cine-AI", desc: "Data science web app with TMDB API & TextBlob NLP audience review sentiment analysis.", stars: 2, forks: 0, lang: "Python", url: "https://github.com/Sonal-sp/Cine-AI", liveUrl: "https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/" },
-      { name: "CyberGuard-Pro", desc: "AI-based password security analyzer built with Flask, entropy calculation & pattern detection.", stars: 1, forks: 0, lang: "HTML/Python", url: "https://github.com/Sonal-sp/CyberGuard-Pro", liveUrl: "https://cyber-guard-pro-gamma.vercel.app" },
-      { name: "Geo-Insights", desc: "3D geospatial discovery tool built with React, Three.js & Tailwind CSS for geography aspirants.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/Geo-Insights", liveUrl: "https://geo-insights-beta.vercel.app" },
       { name: "my-cute-photobooth", desc: "Browser-based digital Japanese purikara photobooth with WebRTC streaming & draggable stickers.", stars: 2, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/my-cute-photobooth", liveUrl: "https://my-cute-photobooth.vercel.app" },
+      { name: "Cine-AI", desc: "Data science web app with TMDB API & TextBlob NLP audience review sentiment analysis.", stars: 2, forks: 0, lang: "Python", url: "https://github.com/Sonal-sp/Cine-AI", liveUrl: "https://cine-ai-5gtq7kducedualejubnk9i.streamlit.app/" },
+      { name: "Geo-Insights", desc: "3D geospatial discovery tool built with React, Three.js & Tailwind CSS for geography aspirants.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/Geo-Insights", liveUrl: "https://geo-insights-beta.vercel.app" },
+      { name: "SafeStep", desc: "Smart Elderly Fall Detection System with ESP32 C3 wearable, MPU6050, Flutter app & n8n WhatsApp SOS.", stars: 5, forks: 1, lang: "Dart/C++", url: "https://github.com/Sonal-sp/SafeStep", liveUrl: "https://github.com/Sonal-sp/SafeStep" },
+      { name: "CyberGuard-Pro", desc: "AI-based password security analyzer built with Flask, entropy calculation & pattern detection.", stars: 1, forks: 0, lang: "HTML/Python", url: "https://github.com/Sonal-sp/CyberGuard-Pro", liveUrl: "https://cyber-guard-pro-gamma.vercel.app" },
+      { name: "pokemon-ar-sim", desc: "Augmented Reality Pokémon simulation with MediaPipe 3D hand tracking & Canvas particle physics.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/pokemon-ar-sim", liveUrl: "https://github.com/Sonal-sp/pokemon-ar-sim" },
       { name: "Swift-Shift", desc: "Conversion-optimized relocation single-page landing page built with React, Vite & Tailwind.", stars: 1, forks: 0, lang: "JavaScript", url: "https://github.com/Sonal-sp/Swift-Shift", liveUrl: "https://swift-shift-xi.vercel.app/" }
     ],
     stats: {
